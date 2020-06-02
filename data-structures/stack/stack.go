@@ -31,3 +31,8 @@ func (s *ItemStack) Pop() Item {
 	s.items = s.items[:len(s.items)-1]
 	return item
 }
+
+// Size return numbers of elements in the stack
+func (s *ItemStack) Size() int {
+	return len(s.items)
+}
